@@ -1,0 +1,15 @@
+<strong *ngIf="submitMessage" class="error-message">{{submitMessage}}</strong>
+
+<form>
+    <div [formGroup]="myGroup">
+    <div class="input-group mb-3">
+        <input class="username" matInput type="text" [formControl]='username'>
+    </div>
+    <div class="input-group mb-3">
+        <input class="password" matInput type="password" [formControl]='password'>
+    </div>
+    <button (click)="loginSubmit()" type="submit" mat-button>Submit</button>
+
+    </div>
+</form>
+
